@@ -11,14 +11,17 @@ class Student {
     }
 
     public static void swap(Student a, Student b) {
-        Student c = a;
+        String name = a.name;
+        String id = a.id;
+        double cgpa = a.cgpa;
+
         a.name = b.name;
         a.id = b.id;
         a.cgpa = b.cgpa;
 
-        b.name = c.name;
-        b.id = c.id;
-        b.cgpa = c.cgpa;
+        b.name = name;
+        b.id = id;
+        b.cgpa = cgpa;
     }
 
     public String toString() {
